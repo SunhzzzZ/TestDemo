@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: TestApplication
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/order_service1?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: root
+# redis配置
+  redis:
+    host: 121.40.255.172
+    port: 6379
+# 开启驼峰命名
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  # mapper路径
+  mapper-locations: classpath:mapper/*.xml
